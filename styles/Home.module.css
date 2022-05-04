@@ -1,10 +1,16 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 0rem;
 }
-
+.background {
+  background-image: url('../assets/images/bgimg3.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+}
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  z-index: 2;
+  min-height: 84vh;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -113,4 +119,62 @@
     width: 100%;
     flex-direction: column;
   }
+}
+.logcard
+{
+  color: white;
+  background-color: rgba(0, 0,0, 0.5);
+  min-width: 80vh;
+  height: 50vh;
+  backdrop-filter: blur(7px);
+  text-align: center;
+  border-radius: 10px;
+}
+.logcont {
+  padding: 4vh 20vh;
+}
+.formlog input {
+  width: 100%;
+  margin-top: 4vh;
+  padding: 1vh 0vh;
+  border: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  background: transparent;
+}
+.formlog label {
+  position:absolute;
+  text-align: left;
+}
+.formlog input::placeholder {
+  color: white;
+  font-weight: 100;
+}
+.formlog input:placeholder-shown ~ .formlog{
+  cursor: text;
+  top: 25px;
+}
+.formlog input:focus {
+  outline: none;
+  border: 0;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  background: transparent;
+}
+.formlog input::placeholder:focus {
+  color: black;
+}
+.username {
+  margin-top: 5px;
+}
+.signbtn {
+  color: white;
+  margin-top: 5vh;
+  width: 20vh;
+  font-size: 15px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-image:linear-gradient(to right,#AD5DC9,#FF000F);
 }
